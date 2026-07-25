@@ -1,3 +1,7 @@
+## Network Topology
+
+![Topology](images/topology.png)
+
 # Enterprise Campus Network Lab
 
 ## Overview
@@ -39,3 +43,14 @@ Configuration verification outputs are available inside the verification folder.
 - Layer 3 Routing
 - Network Security
 - Network Troubleshooting
+
+## Lessons Learned
+
+During this project I learned:
+
+- Designing a small enterprise campus network
+- Configuring Layer 2 and Layer 3 switching
+- Implementing DHCP relay
+- Securing switch ports with Port Security
+- Applying ACLs for traffic filtering
+- Configuring NAT/PAT for Internet access
