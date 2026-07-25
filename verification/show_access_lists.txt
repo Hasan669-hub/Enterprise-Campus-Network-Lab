@@ -1,0 +1,39 @@
+L3-SW#show access-lists 
+Extended IP access list 100
+    10 permit ip 192.168.10.0 0.0.0.255 any
+Extended IP access list 110
+    10 permit udp any any eq bootpc
+    20 permit udp any any eq bootps (6 matches)
+    30 deny ip 192.168.20.0 0.0.0.255 192.168.30.0 0.0.0.255
+    40 permit ip 192.168.20.0 0.0.0.255 any (5 matches)
+Extended IP access list 120
+    10 permit tcp host 192.168.99.10 host 192.168.99.1
+    20 deny ip any any log
+Extended IP access list 150
+    10 permit tcp host 192.168.99.10 host 192.168.99.1
+    20 deny ip any any log
+Extended IP access list CISCO-CWA-URL-REDIRECT-ACL
+    100 deny udp any any eq domain
+    101 deny tcp any any eq domain
+    102 deny udp any eq bootps any
+    103 deny udp any any eq bootpc
+    104 deny udp any eq bootpc any
+    105 permit tcp any any eq www
+Extended IP access list preauth_ipv4_acl (per-user)
+    10 permit udp any any eq domain
+    20 permit tcp any any eq domain
+    30 permit udp any eq bootps any
+    40 permit udp any any eq bootpc
+    50 permit udp any eq bootpc any
+    60 deny ip any any
+IPv6 access list preauth_ipv6_acl (per-user)
+    permit udp any any eq domain sequence 10
+    permit tcp any any eq domain sequence 20
+    permit icmp any any nd-ns sequence 30
+    permit icmp any any nd-na sequence 40
+    permit icmp any any router-solicitation sequence 50
+    permit icmp any any router-advertisement sequence 60
+    permit icmp any any redirect sequence 70
+    permit udp any eq 547 any eq 546 sequence 80
+    permit udp any eq 546 any eq 547 sequence 90
+    deny ipv6 any any sequence 100
