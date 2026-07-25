@@ -1,0 +1,23 @@
+SW4# show port-security 
+Secure Port  MaxSecureAddr  CurrentAddr  SecurityViolation  Security Action
+                (Count)       (Count)          (Count)
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+Total Addresses in System (excluding one mac per port)     : 0
+Max Addresses limit in System (excluding one mac per port) : 4096
+
+SW4#show mac address-table 
+          Mac Address Table
+-------------------------------------------
+
+Vlan    Mac Address       Type        Ports
+----    -----------       --------    -----
+   1    aabb.cc00.0220    DYNAMIC     Po2
+   1    aabb.cc00.0230    DYNAMIC     Po2
+  30    aabb.cc00.0230    DYNAMIC     Po2
+  99    aabb.cc00.0230    DYNAMIC     Po2
+  10    aabb.cc00.0230    DYNAMIC     Po2
+  20    0050.7966.68bd    DYNAMIC     Po2
+  20    aabb.cc00.0230    DYNAMIC     Po2
+ 100    aabb.cc00.0230    DYNAMIC     Po2
+Total Mac Addresses for this criterion: 8
