@@ -1,0 +1,14 @@
+L3-SW#show vlan brief 
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Et1/2, Et1/3
+10   IT                               active    
+20   HR                               active    
+30   Finance                          active    
+99   Management                       active    
+100  Server                           active    
+1002 fddi-default                     act/unsup 
+1003 token-ring-default               act/unsup 
+1004 fddinet-default                  act/unsup 
+1005 trnet-default 
