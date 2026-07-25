@@ -1,0 +1,8 @@
+SERVER-1#show ip dhcp bi
+SERVER-1#show ip dhcp binding 
+Bindings from all pools not associated with VRF:
+IP address          Client-ID/              Lease expiration        Type
+                    Hardware address/
+                    User name
+192.168.20.11       0100.5079.6668.bd       Jul 26 2026 02:20 PM    Automatic
+192.168.30.11       0100.5079.6668.bb       Jul 26 2026 02:18 PM    Automatic
